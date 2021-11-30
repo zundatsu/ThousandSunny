@@ -8,6 +8,12 @@
     .g2_image{
         max-width: 450px !important;
     }
+    .group5 {
+        flex-wrap: wrap !important;
+    }
+    footer{
+        max-height: 1000px !important;
+    }
 }
 @media screen and  (max-width: 991px) {
     .GeneralContainer{
@@ -16,16 +22,31 @@
     .group1 {
         height: 1200px !important;
     }
+    .group7 {
+        flex-wrap: wrap !important;
+    }
 }
 @media screen and  (max-width: 767px) {
     .GeneralContainer{
-        max-width: 546px !important;
+        max-width: 100% !important;
     }
     .group1 {
         height: 1200px !important;
     }
     .g4_image {
-        max-width: 550px !important;
+        max-width: 100% !important;
+    }
+    .g2_image{
+        max-width: 100% !important;
+    }
+    .g1_image{
+        max-width: 100% !important;
+    }
+    .g3_head {
+        flex-wrap: wrap;
+    }
+    .g1_ddline{
+        flex-wrap: wrap !important;
     }
 }
 
@@ -64,6 +85,7 @@ main{
     justify-content: space-between;
     height: 60px;
     margin-top: 35px;
+    flex-wrap: wrap;
 }
 
 .cap_menu {
@@ -71,6 +93,7 @@ main{
     justify-content: space-between;
     width: 663px;
     height: 59px;
+    flex-wrap: wrap;
 }
 
 .cap_navbutton{
@@ -134,10 +157,6 @@ main{
     color: #202336;
 }
 
-.g1_holidayfinder {
-    height: 237px;
-}
-
 .g1_holhead {
     font-family: Inter;
     font-style: normal;
@@ -171,25 +190,14 @@ main{
     margin-bottom: 35px;
     line-height: 52px;
     text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #4A4C53;
 }
 
-input, .submenu {
-    display: none;
-}
 
-input:checked~.submenu {
-    display: block;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 220px;
-    margin-top: 52px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
 
 
 
@@ -441,31 +449,55 @@ input:checked~.submenu {
 .g5_images-next {
     width: 417px;
     height: 523px;
-    border: 2px solid black;
-    margin-right: 130px;
     display: flex;
     position: relative;
 }
 
+.firstpicture {
+    background-image: url(../images/theman.png);
+}
+
+.secondpicture {
+    background-image: url(../images/theman2.png);
+}
+
+.g5_box {
+    width: 384px;
+    height: 491px;
+    margin: auto;
+    position: relative;
+}
+
 .g5_pointers {
-    background: grey;
     border-radius: 16px 0px 0px 0px;
     width: 132px;
     height: 60px;
-    align-self: flex-end;
-    padding-top: 20px;
-    padding-left: 30px;
-}
-
-.g5_point {
-    width: 40px;
-    height: 40px;
-}
-
-#bottom-right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
     right: 0;
     bottom: 0;
     position: absolute;
+}
+
+.buttonnext {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/next.png);
+}
+
+.buttonprev {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/previous.png);
+}
+
+.nextpressed {
+    background-image: url(../images/nextpressed.png);
+}
+
+.prevpressed {
+    background-image: url(../images/prevpressed.png);
 }
 
 .group6 {
@@ -573,7 +605,6 @@ footer {
 }
 
 .g7_column {
-    height: 249px;
     padding-top: 78px;
 }
 
